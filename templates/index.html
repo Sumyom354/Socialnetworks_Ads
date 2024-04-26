@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Social Network Ads</title>
+    <link rel="stylesheet" href="../static/style.css"> 
+</head>
+<body><div class="container">
+        <div class="form">
+            <h2 class="heading"><u>Predict Social Network Ads</u></h2>
+            <form  action="/predict" method="post">
+                <div class="input-box">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div class="input-box">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="0">Female</option>
+                        <option value="1">Male</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="salary">Estimated Salary:</label>
+                    <input type="number" id="salary" name="salary">
+                </div>
+                <button type="submit">Predict</button>
+            </form>
+        <div>
+            <h3 class="result">{{pred_res}}</h3>
+        </div>
+           
+    </div> 
+</div>       
+</body>
+</html>
+
+    
