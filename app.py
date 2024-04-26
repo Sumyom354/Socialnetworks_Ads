@@ -1,4 +1,4 @@
-pip install scikit==1.4.2
+
 from flask import Flask,request,render_template
 from joblib import load
 import numpy as np
